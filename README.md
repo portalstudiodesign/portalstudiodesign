@@ -1,8 +1,8 @@
 ### Hi, I'm Iulian 👋
 
 I'm a developer from Romania who builds **complete products** — from the database schema to the store listing.
-I've shipped a mobile game to Google Play, a health app for thyroid patients, and an open-source SaaS with
-subscriptions, an embeddable widget and CI.
+I've shipped a mobile game to Google Play and a health app for thyroid patients, and I build open-source
+projects in the open: a SaaS with subscriptions and CI, and a RAG pipeline with an evaluation set.
 
 📫 **Contact:** [portaldesignstudios@gmail.com](mailto:portaldesignstudios@gmail.com) · [LinkedIn](https://www.linkedin.com/in/antal-adrian-iulian/)
 
@@ -21,6 +21,13 @@ roadmap, merging of duplicate ideas, email notifications, an embeddable widget a
 - Data integrity enforced by the database — composite keys for one-vote-per-user, triggers for counters
 - 60+ integration tests against a real Postgres, CI on every push, signature-verified Stripe webhooks
 - A dependency-free widget isolated with Shadow DOM + iframe, with clickjacking protection on every other page
+
+#### [askdocs](https://github.com/portalstudiodesign/askdocs) — a RAG pipeline that knows when not to answer · *open source*
+
+- **Python · SQLite · hybrid retrieval** — BM25 and dense vectors fused with Reciprocal Rank Fusion, answers with citations
+- Abstains when the documentation doesn't cover the question, instead of guessing
+- Treats retrieved text as untrusted (prompt-injection scanning) and measures quality with a scored evaluation set
+- Runs fully offline with no API key; uses OpenAI embeddings when a key is present
 
 #### [Onyx Flow](https://play.google.com/store/apps/details?id=com.portaldesignstudio.onyxflow) — premium block puzzle for Android · *published on Google Play*
 
@@ -45,8 +52,9 @@ roadmap, merging of duplicate ideas, email notifications, an embeddable widget a
 
 ### 🛠️ Tools I work with
 
-**Languages:** TypeScript · JavaScript · C# · SQL
+**Languages:** TypeScript · JavaScript · C# · Python · SQL
 **Web:** Next.js · React · Node.js · Tailwind CSS
-**Data & services:** PostgreSQL · Drizzle ORM · Stripe · Vercel · Neon
+**Data & services:** PostgreSQL · SQLite · Drizzle ORM · Stripe · Vercel · Neon
+**AI:** retrieval-augmented generation (RAG) · embeddings · evaluation sets · LLM integration
 **Mobile & games:** Unity 6 · Capacitor · Android
 **Practices:** automated testing (Vitest, Unity EditMode) · CI with GitHub Actions · Git
