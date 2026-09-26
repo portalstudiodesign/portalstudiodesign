@@ -1,60 +1,60 @@
-### Hi, I'm Adrian Iulian Antal 👋
+### Hi, I'm Iulian 👋
 
-**Unity / Mobile Developer · C# · Android · AI-assisted product development** — Neamț, Romania · open to remote
+I'm a developer from Romania who builds **complete products** — from the database schema to the store listing.
+I've shipped a mobile game to Google Play and a health app for thyroid patients, and I build open-source
+projects in the open: a SaaS with subscriptions and CI, and a RAG pipeline with an evaluation set.
 
-I ship **complete products**, from specification to store listing: architecture, implementation, UI, testing,
-deployment, monetisation and release. I published an Android game on Google Play on my own, built a health app
-with OCR and a conversational AI assistant, and build open-source projects in the open. I've run my own technical
-businesses since 2012, so client communication, fixed deadlines and working without supervision are how I work.
-
-📫 [portaldesignstudios@gmail.com](mailto:portaldesignstudios@gmail.com) · [LinkedIn](https://www.linkedin.com/in/antal-adrian-iulian/)
+📫 **Contact:** [portaldesignstudios@gmail.com](mailto:portaldesignstudios@gmail.com) · [LinkedIn](https://www.linkedin.com/in/antal-adrian-iulian/)
 
 ---
 
 ### 🚀 What I've built
 
-#### [Onyx Flow](https://play.google.com/store/apps/details?id=com.portaldesignstudio.onyxflow) — block puzzle for Android · *live on Google Play*
-
-**[Google Play](https://play.google.com/store/apps/details?id=com.portaldesignstudio.onyxflow)** · **[Website](https://portalstudiodesign.github.io/onyx-flow-site/)**
-
-- **Unity 6 · C#** — designed, built and published solo: engineering, visual direction, monetisation, compliance, release
-- An original **Flow multiplier**: charged only by line clears, weighted by the open space you leave, up to ×2.25
-- Every block, effect and board skin is **generated procedurally at runtime** — 33 MB download, 60 FPS on mid-range Android
-- Deterministic daily challenges and runs stored as *seed + moves*, so any game replays move for move
-- Game rules live in engine-free C# assemblies, unit-tested without opening Unity
-
 #### [Echoboard](https://github.com/portalstudiodesign/echoboard) — feedback boards & public roadmaps for SaaS teams · *open source*
 
 **[Live app](https://echoboard-nine.vercel.app)** · **[Demo board](https://echoboard-nine.vercel.app/b/orbit)** · **[Source](https://github.com/portalstudiodesign/echoboard)**
 
-- **Next.js 16 · TypeScript · PostgreSQL (Drizzle) · Better Auth · Stripe**, deployed on Vercel + Neon
-- Multi-tenant workspaces with roles and invitations, voting, a roadmap, duplicate merging, voter emails
-- Data integrity enforced by the database (composite keys, triggers); 60+ integration tests on a real Postgres, CI on every push
-- Stripe Checkout, customer portal and signature-verified webhooks; an embeddable widget isolated with Shadow DOM + iframe
+A multi-tenant SaaS: workspaces with roles and invitations, public boards with voting and comments, a
+roadmap, merging of duplicate ideas, email notifications, an embeddable widget and Stripe subscriptions.
+
+- **Next.js 16 · TypeScript · PostgreSQL (Drizzle) · Better Auth · Stripe · Tailwind**, deployed on Vercel + Neon
+- Data integrity enforced by the database — composite keys for one-vote-per-user, triggers for counters
+- 60+ integration tests against a real Postgres, CI on every push, signature-verified Stripe webhooks
+- A dependency-free widget isolated with Shadow DOM + iframe, with clickjacking protection on every other page
 
 #### [askdocs](https://github.com/portalstudiodesign/askdocs) — a RAG pipeline that knows when not to answer · *open source*
 
-- **Python · SQLite** — hybrid retrieval (BM25 + dense vectors, fused with Reciprocal Rank Fusion), answers with citations
-- Abstains when the documentation doesn't cover the question, treats retrieved text as untrusted, scored with an evaluation set
+- **Python · SQLite · hybrid retrieval** — BM25 and dense vectors fused with Reciprocal Rank Fusion, answers with citations
+- Abstains when the documentation doesn't cover the question, instead of guessing
+- Treats retrieved text as untrusted (prompt-injection scanning) and measures quality with a scored evaluation set
 - Runs fully offline with no API key; uses OpenAI embeddings when a key is present
 
-#### [TiroCare](https://tirocareromania.netlify.app) — health companion for thyroid patients (Romanian)
+#### [Onyx Flow](https://play.google.com/store/apps/details?id=com.portaldesignstudio.onyxflow) — premium block puzzle for Android · *published on Google Play*
+
+**[Google Play](https://play.google.com/store/apps/details?id=com.portaldesignstudio.onyxflow)** · **[Website](https://portalstudiodesign.github.io/onyx-flow-site/)**
+
+- **Unity 6 · C#** — game rules live in engine-free assemblies, so they are unit-tested without opening Unity
+- Procedural visual identity (no stock art), a developer sandbox with replay, profiling and seeded runs
+- Taken end to end solo: gameplay, art direction, store listing, privacy policy and release
+
+#### [TiroCare](https://tirocareromania.netlify.app) — personal assistant for thyroid patients (Romanian)
 
 **[Web app](https://tirocareromania.netlify.app)**
 
-- **JavaScript · Capacitor · OCR · conversational AI** — onboarding adapts the app to the user's condition
-- Lab reports imported from PDF or photo, with OCR extraction of TSH, FT4, ATPO and Anti-Tg and comparison against reference ranges
-- Medication schedules, retest reminders and a PDF report for the doctor; no accounts, no server — data stays on the device
+- **JavaScript · Capacitor (Android) · AI integration** — symptom and lab-result tracking, medication reminders, an AI assistant
+- Built for a regulated space: explicit consent for AI, in-app reporting of AI answers, a public privacy policy
+- Android app being prepared for Google Play
 
-> Onyx Flow and TiroCare are commercial products, so their source is private. I'm happy to walk through the code
-> and architecture in an interview.
+> The source of Onyx Flow and TiroCare is private because they are commercial products.
+> I'm happy to walk through the code and architecture in an interview.
 
 ---
 
-### 🛠️ Tools
+### 🛠️ Tools I work with
 
-**Languages:** C# · TypeScript · JavaScript · Python · SQL
-**Games & mobile:** Unity 6 / 2022 LTS · URP 2D · Android · Google Play Console · AdMob · Capacitor
-**Web:** Next.js · React · Node.js · Tailwind CSS · PostgreSQL · Stripe · Vercel · Netlify
-**AI:** agentic coding with Claude Code, with my own review on top · RAG, embeddings and evaluation sets · conversational AI in a shipped product
-**Practices:** specification-first development · engine-free, testable game logic · automated tests · CI with GitHub Actions · Git
+**Languages:** TypeScript · JavaScript · C# · Python · SQL
+**Web:** Next.js · React · Node.js · Tailwind CSS
+**Data & services:** PostgreSQL · SQLite · Drizzle ORM · Stripe · Vercel · Neon
+**AI:** retrieval-augmented generation (RAG) · embeddings · evaluation sets · LLM integration
+**Mobile & games:** Unity 6 · Capacitor · Android
+**Practices:** automated testing (Vitest, Unity EditMode) · CI with GitHub Actions · Git
