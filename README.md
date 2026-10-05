@@ -39,7 +39,7 @@ roadmap, merging of duplicate ideas, email notifications, an embeddable widget a
 
 #### [TiroCare](https://tirocareromania.netlify.app) — personal assistant for thyroid patients (Romanian)
 
-**[Web app](https://tirocareromania.netlify.app)** · **[Case study](https://github.com/portalstudiodesign/tirocare-case-study)**
+**[Website](https://tirocare-site.vercel.app)** · **[Web app](https://tirocareromania.netlify.app)** · **[Case study](https://github.com/portalstudiodesign/tirocare-case-study)**
 
 - **JavaScript · Capacitor (Android) · AI integration** — symptom and lab-result tracking, medication reminders, an AI assistant
 - Built for a regulated space: explicit consent for AI, in-app reporting of AI answers, a public privacy policy
